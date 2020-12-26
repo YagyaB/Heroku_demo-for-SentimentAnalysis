@@ -1,0 +1,1 @@
+web: gunicorn SentimentAnalysis3.wsgi --log-file -

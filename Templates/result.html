@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rating</title>
+    <style type="text/css">
+     . {
+         margin: 0;
+         padding: 0;
+     }
+
+/*     body{
+     background-color:white;
+     }
+     
+     h8{
+     border: 40px solid blue;
+     padding: 20px; 
+     width: 700px;
+     resize:initial;
+     overflow: auto;
+     outline: 100px solid red;
+     outline-offset: 0px;
+     position: absolute;
+     left: 20%;
+     top: 30%;
+     transform: translateX(-50) translateY(-50);
+     text-align: center;
+     font-size: 1cm;
+    }
+*/
+
+body{
+    background-color: lightblue;
+}
+h1{
+position: absolute;
+left: 22%;
+top: 8%;
+transform: translateX(-50) translateY(-50);
+text-align: center;
+font-size: 1.5cm;
+font-family:red serif;
+font-style: italic;
+}
+
+h3{
+position: absolute;
+left: 35%;
+top: 30%;
+transform: translateX(-50) translateY(-50);
+text-align: center;
+font-size: 1cm;
+}
+input[type=text] {
+    width: 150%;
+    padding: 20px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+    font-size: 20px;
+  }
+  
+  h4{
+    position: absolute;
+    left: 44%;
+    top: 7%;
+    transform: translateX(-50) translateY(-50);
+    text-align: center;
+    font-size: 3cm;
+    font-family:red serif;
+    font-style:bolt;
+    }
+    h5{
+        position: absolute;
+        left: 80%;
+        top: 2%;
+        font-size: 0.6cm;
+    }
+
+   </style>
+
+</head>
+<body>
+    <!-- <h5 textcolor = "black">The rating of the comment is {{answer}}</h5> --> 
+
+    {% block content %}
+
+    <h1>Checking for the rating class</h1>>
+    
+    <!--<h3>
+    <form action="{% url 'result' %}">
+     {% csrf_token %}
+     <label for="comment">Enter the comment</label><br>
+     <input type="text" id="comment" name="comment"><br> <br>
+    </form>
+    </h3>>-->
+
+    <h4 textcolor = "black">{{answer}}</h4> <br>
+
+   <h5><a href="{% url 'home' %}">Click here to Go home</a></h5>
+
+    {% endblock %}
+    
+</body>
+</html>
